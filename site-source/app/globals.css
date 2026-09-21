@@ -37,9 +37,9 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .profile-role { font-size:.875rem; line-height:1.5; margin:0 0 20px; }
 .profile-meta { display:flex; align-items:center; gap:8px; font-size:.875rem; line-height:1.5; margin:9px 0; color:#494e52; }
 .profile-meta svg { width:15px; height:15px; flex-shrink:0; }
-.contact-links { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:3px; max-width:200px; margin-top:12px; }
-.social-link { display:flex; align-items:center; justify-content:center; min-width:0; min-height:40px; color:#494e52; border-radius:4px; }
-.social-link svg { display:block; width:28px; height:28px; }
+.contact-links { display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:12px; }
+.social-link { display:flex; align-items:center; justify-content:center; width:32px; min-height:32px; color:#494e52; border-radius:4px; }
+.social-link svg { display:block; width:20px; height:20px; }
 .social-link:hover { color:var(--primary); text-decoration:none; }
 main { min-width:0; }
 .content-section { scroll-margin-top:106px; margin-bottom:42px; }
