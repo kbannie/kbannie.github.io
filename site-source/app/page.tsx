@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { MapPin, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { SocialIcon } from '@/components/social-icon';
 import { Button } from '@/components/ui/button';
 
@@ -80,13 +80,13 @@ export default function Home() {
         <div className="profile-text">
           <h1>Kabeen Kim</h1>
           <p className="profile-role">Undergraduate at<br />Duksung Women’s University</p>
-          <div className="profile-meta"><MapPin aria-hidden="true" size={15} /><span>Seoul, South Korea</span></div>
+          <div className="profile-meta"><SocialIcon name="location" /><span>Seoul, South Korea</span></div>
           <div className="contact-links" aria-label="Contact and profiles">
-            <a className="social-link" href="mailto:sunk2205@duksung.ac.kr" aria-label="Email" title="Email"><SocialIcon name="email" /></a>
-            <a className="social-link" href="https://www.linkedin.com/in/kabeen-kim-6806b8221/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><SocialIcon name="linkedin" /></a>
-            <a className="social-link" href="https://github.com/kbannie" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><SocialIcon name="github" /></a>
-            <a className="social-link" href="https://scholar.google.com/citations?user=_GZ1nzIAAAAJ&hl=ko" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><SocialIcon name="scholar" /></a>
-            <a className="social-link" href="/KabeenKim_CV.pdf" target="_blank" rel="noreferrer" aria-label="Curriculum Vitae (PDF)" title="CV"><SocialIcon name="cv" /></a>
+            <a className="social-link" href="mailto:sunk2205@duksung.ac.kr" aria-label="Email" title="Email"><SocialIcon name="email" /><span>Email</span></a>
+            <a className="social-link social-link-linkedin" href="https://www.linkedin.com/in/kabeen-kim-6806b8221/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><SocialIcon name="linkedin" /><span>LinkedIn</span></a>
+            <a className="social-link social-link-github" href="https://github.com/kbannie" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><SocialIcon name="github" /><span>GitHub</span></a>
+            <a className="social-link" href="https://scholar.google.com/citations?user=_GZ1nzIAAAAJ&hl=ko" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><SocialIcon name="scholar" /><span>Google Scholar</span></a>
+            <a className="social-link" href="/KabeenKim_CV.pdf" target="_blank" rel="noreferrer" aria-label="Curriculum Vitae (PDF)" title="CV"><SocialIcon name="cv" /><span>CV</span></a>
           </div>
         </div>
       </aside>

@@ -1,9 +1,14 @@
 /*! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. */
 // Original SVG geometry and viewBoxes are preserved. Full license: /licenses/fontawesome.txt.
 
-export type SocialIconName = "email" | "linkedin" | "github" | "scholar" | "cv";
+export type SocialIconName = "email" | "linkedin" | "github" | "scholar" | "cv" | "location";
 
 const icons: Record<SocialIconName, { viewBox: string; path: string }> = {
+  // https://github.com/FortAwesome/Font-Awesome/blob/6.7.2/svgs/solid/location-dot.svg
+  location: {
+    viewBox: "0 0 384 512",
+    path: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z",
+  },
   // https://github.com/FortAwesome/Font-Awesome/blob/6.7.2/svgs/solid/envelope.svg
   email: {
     viewBox: "0 0 512 512",
