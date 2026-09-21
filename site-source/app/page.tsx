@@ -33,7 +33,8 @@ const research = [
     paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
 ];
 const experience = [
-  { mark: 'ETRI', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern · Knowledge Graph & Multi-Hop GraphRAG', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea' },
+  { mark: 'ETRI', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern · Knowledge Graph & Multi-Hop GraphRAG', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea',
+    project: { name: 'DoctrineRAG', summary: 'Developed path-preserving beam search and evidence reranking for a multi-hop GraphRAG pipeline. On a curated 250-question doctrine QA benchmark, the proportion of questions retaining all gold evidence increased from 40.0% to 76.8%.' } },
   { mark: 'BCG', tone: 'bcg', logo: '/logos/bcg.png', organization: 'Boston Consulting Group', role: 'Research Analyst Intern', date: 'Mar 2026 – May 2026', location: 'Seoul, South Korea' },
   { mark: 'DMKD', tone: 'dmkd', logo: '/logos/duksung-mark.png', organization: 'DMKD Lab · Duksung Women’s University', role: 'Undergraduate Researcher · LLM Reasoning & Document Understanding', advisor: { name: 'Prof. Jehyeok Rew', href: 'https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788' }, date: 'Mar 2025 – Feb 2026', location: 'Seoul, South Korea' },
   { mark: 'CV', tone: 'cvlab', logo: '/logos/olemiss.png', organization: 'Computer Vision Lab · University of Mississippi', role: 'Undergraduate Researcher · Low-Light Human Pose Estimation', advisor: { name: 'Prof. Hawk Wang', href: 'https://olemiss.edu/profiles/hbw' }, date: 'Aug 2024 – Feb 2025', location: 'Mississippi, United States' },
@@ -136,6 +137,7 @@ export default function Home() {
           <div className="experience-list">{experience.map(item => <article className="experience-item" key={item.mark}>
             <div className={'organization-logo ' + item.tone}><img src={item.logo} alt={item.mark === 'DMKD' ? 'Duksung Women’s University emblem' : item.mark === 'CV' ? 'University of Mississippi' : item.mark} width="130" height="80" loading="lazy" /></div>
             <div><h3>{item.organization}</h3><p className="job-title">{item.role} <span className="job-location">| {item.location}</span></p>{item.advisor && <p className="job-title">Advisor: <a href={item.advisor.href} target="_blank" rel="noreferrer">{item.advisor.name}</a></p>}<p className="experience-date">{item.date}</p>
+              {item.project && <p className="experience-project"><strong>{item.project.name}:</strong> {item.project.summary}</p>}
             </div>
           </article>)}</div>
         </section>
