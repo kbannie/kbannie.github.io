@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { FileText, Code, GraduationCap, Link, Mail, MapPin, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
   { id: 'about', label: 'About Me' }, { id: 'news', label: 'News' },
@@ -11,34 +10,26 @@ const sections = [
   { id: 'experience', label: 'Work Experience' }, { id: 'service', label: 'Academic Service' },
 ];
 const research = [
-  { id: 'udapose', name: 'UDAPose', area: 'COMPUTER VISION', tone: 'blue',
+  { id: 'udapose', name: 'UDAPose',
     title: 'UDAPose: Unsupervised Domain Adaptation for Low-Light Human Pose Estimation',
     authors: 'Haopeng Chen, Yihao Ai, Kabeen Kim, Robby T. Tan, Yixin Chen, Bo Wang', venue: 'CVPR 2026 · Accepted Feb 24, 2026',
-    description: 'Unsupervised domain adaptation for robust human pose estimation in low-light environments.',
     figure: { number: 1, src: '/figures/udapose-figure1.png', width: 2084, height: 630, alt: 'UDAPose Figure 1: comparison of enhancement-based, image translation-based, and proposed low-light pose estimation approaches' },
-    detail: 'Contributed through domain-adaptation fine-tuning, training-pipeline tuning, and benchmarking against CycleGAN, UNIT, ELLA, and UNSB. Developed a 15-category failure taxonomy to identify model and dataset weaknesses and guide subsequent analysis.',
-    focus: 'Domain adaptation · Low-light vision · Failure analysis', paper: 'https://arxiv.org/abs/2604.10485', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
-  { id: 'confuse', name: 'ConFuse', area: 'LLM + TABULAR LEARNING', tone: 'amber',
+    paper: 'https://arxiv.org/abs/2604.10485', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
+  { id: 'confuse', name: 'ConFuse',
     title: 'ConFuse: Context-Aware Fusion of LLMs and GBDTs for Sleep Prediction from Lifelog Data',
     authors: 'Kabeen Kim*, Yena Kim*, Minjeong Seo*', authorNote: '* Equal contribution.', venue: 'ICTC 2026 · Accepted Sep 7, 2026',
-    description: 'Context-aware fusion of language models and gradient-boosted decision trees for sleep prediction from lifelog data.',
     figure: { number: 1, src: '/figures/confuse-figure1.png', width: 4000, height: 1668, alt: 'ConFuse Figure 1: overview of context-aware LLM and GBDT prediction fusion' },
-    detail: 'Research connecting language-model reasoning with structured-data prediction. The work investigates context-aware fusion of LLMs and gradient-boosted decision trees for sleep prediction using lifelog data.',
-    focus: 'Lifelog data · Language models · Gradient boosting', paper: '', code: 'https://github.com/kbannie/ConFuse' },
-  { id: 'codu', name: 'CoDU', area: 'DOCUMENT UNDERSTANDING', tone: 'green',
+    paper: '', code: 'https://github.com/kbannie/ConFuse' },
+  { id: 'codu', name: 'CoDU',
     title: 'CoDU: Multi-Stage Approach for Complex Document Structure Understanding',
     authors: 'Kabeen Kim, Minhye Lee, Haein Seo, Jehyeok Rew', venue: 'KDBC 2025 · Accepted Oct 22, 2025',
-    description: 'A document-structuring pipeline that connects layout detection, bounding-box refinement, and reading-order reconstruction.',
     figure: { number: 2, src: '/figures/codu-figure2.png', width: 1442, height: 603, alt: 'CoDU Figure 2: bounding box detection and refinement, OCR extraction, and reading order rearrangement pipeline' },
-    detail: 'Built a pipeline using DocLayout-YOLO fine-tuning, bounding-box refinement, and reading-order reconstruction. The work improved layout-detection F1 by 0.475 and supported a 3rd-place finish out of 210 teams at the Samsung AI Challenge. First-author work at Korea Data Base Conference 2025.',
-    focus: 'Layout analysis · Document structuring · Reading order', paper: '', code: '' },
-  { id: 'sptc', name: 'SPTC', area: 'LANGUAGE MODEL REASONING', tone: 'purple',
+    paper: '', code: '' },
+  { id: 'sptc', name: 'SPTC',
     title: 'SPTC (Single-Pass Tree Chain-of-Thought): An Efficient Prompting Scheme for Small Language Models',
     authors: 'Kabeen Kim, Jiye Park, Jehyeok Rew', venue: 'KCC 2025 · Accepted May 30, 2025',
-    description: 'A generation → self-evaluation → selection scheme for efficient reasoning in small language models.',
     figure: { number: 1, src: '/figures/sptc-figure1.png', width: 653, height: 358, alt: 'SPTC Figure 1: comparison of Tree-of-Thought on the left and SPTC on the right' },
-    detail: 'Designed a single-pass prompting scheme and evaluated it on CommonsenseQA and OpenBookQA. Achieved approximately 1.5× faster inference than Tree-of-Thought. First-author work presented at Korea Computer Congress 2025.',
-    focus: 'Small language models · Prompting · Efficient inference', paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
+    paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
 ];
 const experience = [
   { mark: 'ETRI', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern · Knowledge Graph & Multi-Hop GraphRAG', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea' },
@@ -130,7 +121,6 @@ export default function Home() {
             <div className="research-copy">
               <h3>{project.title} <span className="paper-links">{project.paper && <a href={project.paper} target="_blank" rel="noreferrer">[paper]</a>}{project.code && <a href={project.code} target="_blank" rel="noreferrer">[code]</a>}</span></h3>
               <AuthorLine value={project.authors} />{project.authorNote && <p className="paper-author-note">{project.authorNote}</p>}<p className="paper-venue"><em>{project.venue}</em></p>
-              <Accordion className="research-details"><AccordionItem value={project.id}><AccordionTrigger className="details-trigger">Research overview</AccordionTrigger><AccordionContent><p>{project.description}</p><p>{project.detail}</p><p className="research-focus">{project.focus}</p></AccordionContent></AccordionItem></Accordion>
             </div>
           </article>)}</div>
         </section>
@@ -140,11 +130,6 @@ export default function Home() {
             <li><strong>2021.03 – 2027.02 (expected)</strong>, B.S. in Computer Engineering and Information Statistics, <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>. <span className="entry-meta">GPA: 4.15 / 4.5.</span></li>
             <li><strong>2024.08 – 2024.12</strong>, Exchange Student in Computer Science, <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>.</li>
           </ul>
-          <Accordion className="supplementary"><AccordionItem value="awards"><AccordionTrigger>Awards &amp; activities</AccordionTrigger><AccordionContent>
-            <ul className="compact-list"><li><strong>2025</strong> · 3rd Place, Samsung AI Challenge — Visually-Rich Document Understanding</li><li><strong>2024</strong> · 31st Mirae Asset Overseas Exchange Scholarship</li><li><strong>2024</strong> · Excellence Award, TAVE 13th Data Analysis Project</li><li><strong>2024</strong> · 2nd Prize, DS Global Vision Makers Innovation Idea Competition</li><li><strong>2021–2022</strong> · Academic Excellence Scholarship, Duksung Women’s University (3 awards)</li></ul>
-            <p><strong>Tobig’s 25th Cohort · AI Member</strong> — Jan–Dec 2026<br />LLM architecture and prompting studies, a Codex Hackathon, and a multi-agent reinforcement learning project.</p>
-            <p><strong>Duksung Global Challenger · Team Lead</strong> — Mar–Jul 2025<br />Led a four-member, university-funded team on a beacon-based campus–local business engagement project, with field research across the UK, France, Germany, and the Netherlands.</p>
-          </AccordionContent></AccordionItem></Accordion>
         </section>
         <section id="experience" className="content-section" aria-labelledby="experience-title">
           <h2 id="experience-title">Work Experience</h2>
@@ -153,10 +138,6 @@ export default function Home() {
             <div><h3>{item.organization}</h3><p className="job-title">{item.role} <span className="job-location">| {item.location}</span></p><p className="experience-date">{item.date}</p>
             </div>
           </article>)}</div>
-          <Accordion className="supplementary"><AccordionItem value="projects"><AccordionTrigger>Project highlights</AccordionTrigger><AccordionContent>
-            <p><strong>RAG-based AI Agent for Product Recommendation</strong> · May–Aug 2025<br />Built a product-retrieval pipeline using Pinecone, history-aware query rewriting, and a Cohere reranker. Retrieval precision improved from 0.40 to 0.70 through reranking, query normalization, and few-shot prompting.</p>
-            <p><strong>Immersive Multisensory Exhibition System using Multimodal AI</strong> · Feb–Nov 2025<br />Combined CNN-based visual emotion recognition, CLIP, and MusicGen to turn images into synchronized audio and haptic experiences. Used YOLO-based input routing and asynchronous inference, achieving 30-second end-to-end latency.</p>
-          </AccordionContent></AccordionItem></Accordion>
         </section>
         <section id="service" className="content-section service-section" aria-labelledby="service-title">
           <h2 id="service-title">Academic Service</h2>

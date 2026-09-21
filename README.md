@@ -31,4 +31,4 @@ Key files:
 - `site-source/app/layout.tsx`: page title, canonical URL, and social metadata.
 - `site-source/public/`: CV, profile, institution logos, and paper figures.
 
-This is a static site without a database or server-side API. The client-side mobile menu and expandable research details work after React loads. No secret credentials or separate hosting service are required.
+This is a static site without a database or server-side API. The client-side mobile menu works after React loads. All content sections are displayed without expandable detail panels. No secret credentials or separate hosting service are required.
