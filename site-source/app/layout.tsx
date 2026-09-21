@@ -11,5 +11,5 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description, images: [siteUrl + '/og.png'] },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><head><link rel="preload" href="/fonts/source-sans-3-latin-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" /></head><body>{children}</body></html>;
 }
