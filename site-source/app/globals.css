@@ -36,12 +36,10 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .profile h1 { font-size:1.25rem; font-weight:700; color:#494e52; line-height:1.2; margin:0 0 12px; }
 .profile-role { font-size:.875rem; line-height:1.5; margin:0 0 20px; }
 .profile-meta { display:flex; align-items:center; gap:10px; min-height:32px; font-size:.9375rem; line-height:1.5; margin:0; color:#494e52; }
-.profile-meta svg { display:block; width:20px; height:18px; flex-shrink:0; color:#111; }
+.profile-meta svg { display:block; width:20px; height:18px; flex-shrink:0; color:#494e52; }
 .contact-links { display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:2px; }
 .social-link { display:flex; align-items:center; justify-content:flex-start; gap:10px; min-height:32px; max-width:100%; font-size:.9375rem; line-height:1.5; color:#494e52; border-radius:4px; }
-.social-link svg { display:block; width:20px; height:18px; flex-shrink:0; }
-.social-link-linkedin svg { color:#494e52; }
-.social-link-github svg { color:#181717; }
+.social-link svg { display:block; width:20px; height:18px; flex-shrink:0; color:#494e52; }
 .social-link:hover { color:var(--primary); text-decoration:none; }
 .social-link:hover span { text-decoration:underline; }
 main { min-width:0; }
