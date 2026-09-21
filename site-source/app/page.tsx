@@ -105,14 +105,14 @@ export default function Home() {
         <section id="news" className="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
           <ul className="news-list">
-            <li><time dateTime="2026-09">2026.09:</time> <span aria-hidden="true">🎉🎉</span> <strong>ConFuse</strong> is accepted to <strong>ICTC 2026</strong>!</li>
+            <li><time dateTime="2026-09">2026.09:</time> <span aria-hidden="true">🎉</span> <strong>ConFuse</strong> is accepted to <strong>ICTC 2026</strong>!</li>
             <li><time dateTime="2026-08">2026.08:</time> <span aria-hidden="true">💼</span> Completed my research internship at <strong>ETRI</strong>, working on knowledge graphs and multi-hop GraphRAG.</li>
             <li><time dateTime="2026-05">2026.05:</time> <span aria-hidden="true">💼</span> Completed my <strong>Research Analyst Internship at BCG</strong>, working on industrial data analysis and domain-specific language models.</li>
-            <li><time dateTime="2026-02">2026.02:</time> <span aria-hidden="true">🎉🎉</span> <strong>UDAPose</strong> is accepted to <strong>CVPR 2026</strong>!</li>
+            <li><time dateTime="2026-02">2026.02:</time> <span aria-hidden="true">🎉</span> <strong>UDAPose</strong> is accepted to <strong>CVPR 2026</strong>!</li>
             <li><time dateTime="2026-02">2026.02:</time> <span aria-hidden="true">💼</span> Completed my undergraduate research at <strong>DMKD Lab</strong>, working on LLM reasoning and document understanding.</li>
-            <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🎉🎉</span> <strong>CoDU</strong> is accepted to <strong>KDBC 2025</strong>!</li>
+            <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🎉</span> <strong>CoDU</strong> is accepted to <strong>KDBC 2025</strong>!</li>
             <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the Samsung AI Challenge — Visually-Rich Document Understanding track.</li>
-            <li><time dateTime="2025-05">2025.05:</time> <span aria-hidden="true">🎉🎉</span> <strong>SPTC</strong> is accepted to <strong>KCC 2025</strong>!</li>
+            <li><time dateTime="2025-05">2025.05:</time> <span aria-hidden="true">🎉</span> <strong>SPTC</strong> is accepted to <strong>KCC 2025</strong>!</li>
           </ul>
         </section>
         <section id="publications" className="content-section" aria-labelledby="publications-title">
