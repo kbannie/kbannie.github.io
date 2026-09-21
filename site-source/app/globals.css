@@ -40,7 +40,7 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .contact-links { display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:2px; }
 .social-link { display:flex; align-items:center; justify-content:flex-start; gap:10px; min-height:32px; max-width:100%; font-size:.9375rem; line-height:1.5; color:#494e52; border-radius:4px; }
 .social-link svg { display:block; width:20px; height:18px; flex-shrink:0; }
-.social-link-linkedin svg { color:#0077b5; }
+.social-link-linkedin svg { color:#494e52; }
 .social-link-github svg { color:#181717; }
 .social-link:hover { color:var(--primary); text-decoration:none; }
 .social-link:hover span { text-decoration:underline; }
