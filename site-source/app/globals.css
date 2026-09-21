@@ -47,8 +47,6 @@ button,a { -webkit-tap-highlight-color:transparent; }
 main { min-width:0; }
 .content-section { scroll-margin-top:106px; margin-bottom:42px; }
 .about-section { margin-bottom:31px; }
-.email-line { margin:0 0 9px !important; }
-.email-line a { font-size:.95rem; color:#494e52; }
 .content-section p { margin:0 0 17px; }
 strong { font-weight:700; }
 h2 { display:block; margin:0 0 19px; padding:0 0 8px; border-bottom:1px solid #eeeeef; font-size:1.65rem; line-height:1.3; font-weight:700; color:#494e52; letter-spacing:0; }
@@ -112,7 +110,6 @@ h3 { margin:0 0 4px; font-size:1rem; font-weight:700; line-height:1.5; }
   .profile h1 { margin-bottom:8px; }
   .profile-role { margin-bottom:8px; }
   .profile-meta { margin:0; }
-  .email-line { margin-bottom:12px !important; }
   .content-section { margin-bottom:34px; }
   .research-row { grid-template-columns:145px minmax(0,1fr); }
   .research-interests,.news-list,.education-list,.service-list { padding-left:22px; }
