@@ -32,7 +32,7 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .menu-toggle { display:none !important; }
 .page-layout { max-width:1280px; margin:0 auto; padding:35px 32px 0; display:grid; grid-template-columns:215px minmax(0,1fr); gap:47px; }
 .profile { position:sticky; top:111px; align-self:start; padding-right:10px; }
-.profile-avatar { display:block; width:175px; height:175px; border-radius:50%; object-fit:cover; padding:5px; border:1px solid #f2f3f3; margin:0 0 17px; }
+.profile-avatar { display:block; width:175px; height:175px; border-radius:50%; object-fit:cover; object-position:center top; padding:5px; border:1px solid #f2f3f3; margin:0 0 17px; }
 .profile h1 { font-size:1.25rem; font-weight:700; color:#494e52; line-height:1.2; margin:0 0 12px; }
 .profile-role { font-size:.875rem; line-height:1.5; margin:0 0 20px; }
 .profile-meta { display:flex; align-items:center; gap:8px; font-size:.875rem; line-height:1.5; margin:9px 0; color:#494e52; }

@@ -76,7 +76,7 @@ export default function Home() {
     </div></header>
     <div className="page-layout">
       <aside className="profile" aria-label="Profile">
-        <img className="profile-avatar" src="/profile.png" width="175" height="175" alt="Kabeen Kim’s GitHub avatar" />
+        <img className="profile-avatar" src="/profile.jpg" width="175" height="175" alt="Portrait of Kabeen Kim" />
         <div className="profile-text">
           <h1>Kabeen Kim</h1>
           <p className="profile-role">Undergraduate at<br />Duksung Women’s University</p>
