@@ -21,7 +21,7 @@ const research = [
   { id: 'confuse', name: 'ConFuse',
     title: 'ConFuse: Context-Aware Fusion of LLMs and GBDTs for Sleep Prediction from Lifelog Data',
     authors: 'Kabeen Kim*, Yena Kim*, Minjeong Seo*', authorNote: '* Equal contribution.', venue: 'ICTC 2026',
-    contribution: 'End-to-end development of the LLM component.',
+    contribution: 'Designed and implemented the LLM pipeline: GPT-4.1-guided feature selection and reliability scoring, lifelog prompts using personal baselines, QLoRA fine-tuning of Qwen2.5-7B-Instruct, and target-wise Platt calibration.',
     figure: { number: 1, src: '/figures/confuse-figure1.png', width: 4000, height: 1668, alt: 'ConFuse Figure 1: overview of context-aware LLM and GBDT prediction fusion' },
     paper: '', code: 'https://github.com/kbannie/ConFuse' },
   { id: 'codu', name: 'CoDU',
