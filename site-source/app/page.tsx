@@ -7,10 +7,12 @@ import { Button } from '@/components/ui/button';
 
 const sections = [
   { id: 'about', label: 'About Me' }, { id: 'news', label: 'News' },
+  { id: 'work-in-progress', label: 'Work in Progress' },
   { id: 'publications', label: 'Publications' }, { id: 'education', label: 'Education' },
   { id: 'experience', label: 'Work Experience' }, { id: 'awards', label: 'Awards' },
   { id: 'service', label: 'Outreach' },
 ];
+const graphRagTopic = 'Multi-Hop GraphRAG over Knowledge Graphs';
 const research = [
   { id: 'udapose', name: 'UDAPose',
     title: 'UDAPose: Unsupervised Domain Adaptation for Low-Light Human Pose Estimation',
@@ -39,7 +41,7 @@ const research = [
 ];
 const experience = [
   { mark: 'ETRI', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern · Knowledge Graph & Multi-Hop GraphRAG', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea',
-    project: { name: 'DoctrineRAG', summary: 'Developed path-preserving beam search and evidence reranking for a multi-hop GraphRAG pipeline. On a curated 250-question doctrine QA benchmark, the proportion of questions retaining all gold evidence increased from 40.0% to 76.8%.' } },
+    project: { name: graphRagTopic, summary: 'Developed path-preserving beam search and evidence reranking for a multi-hop GraphRAG pipeline. On a curated 250-question doctrine QA benchmark, the proportion of questions retaining all gold evidence increased from 40.0% to 76.8%.' } },
   { mark: 'BCG', tone: 'bcg', logo: '/logos/bcg.png', organization: 'Boston Consulting Group', role: 'Research Analyst Intern', date: 'Mar 2026 – May 2026', location: 'Seoul, South Korea' },
   { mark: 'DMKD', tone: 'dmkd', logo: '/logos/duksung-mark.png', organization: 'DMKD Lab · Duksung Women’s University', role: 'Undergraduate Researcher · LLM Reasoning & Document Understanding', advisor: { name: 'Prof. Jehyeok Rew', href: 'https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788' }, date: 'Mar 2025 – Feb 2026', location: 'Seoul, South Korea' },
   { mark: 'CV', tone: 'cvlab', logo: '/logos/olemiss.png', organization: 'Computer Vision Lab · University of Mississippi', role: 'Undergraduate Researcher · Low-Light Human Pose Estimation', advisor: { name: 'Prof. Hawk Wang', href: 'https://olemiss.edu/profiles/hbw' }, date: 'Aug 2024 – Feb 2025', location: 'Mississippi, United States' },
@@ -100,7 +102,7 @@ export default function Home() {
         <section id="about" className="content-section about-section" aria-labelledby="about-title">
           <h2 id="about-title" className="sr-only">About Me</h2>
           <p>I am an undergraduate studying Computer Engineering and Information Statistics at <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>, with expected graduation in February 2027. Most recently, I was a research intern at <strong>ETRI</strong>, working on knowledge graphs and multi-hop GraphRAG. Previously, I conducted research on LLM reasoning and document understanding at <strong>DMKD Lab</strong> under the supervision of <a href="https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788" target="_blank" rel="noreferrer">Prof. Jehyeok Rew</a>, and on low-light human pose estimation in the <strong>Computer Vision Lab</strong> at the <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a> under the supervision of <a href="https://olemiss.edu/profiles/hbw" target="_blank" rel="noreferrer">Prof. Hawk Wang</a>. I also worked on industrial data and language models at <strong>BCG</strong>. Here is my <a href="/KabeenKim_CV.pdf?v=7862d68cfe0f" target="_blank" rel="noreferrer">CV</a>.</p>
-          <p>My research spans document understanding, LLM reasoning, and retrieval-augmented generation. Building on my work in document structure analysis (CoDU) and efficient prompting (SPTC), my recent work on <a href="#experience">DoctrineRAG at ETRI</a> focuses on retrieving and connecting evidence for multi-hop question answering.</p>
+          <p>My research spans document understanding, LLM reasoning, and retrieval-augmented generation. Building on my work in document structure analysis (CoDU) and efficient prompting (SPTC), my recent work on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs at ETRI</a> focuses on retrieving and connecting evidence for multi-hop question answering.</p>
         </section>
         <section id="news" className="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
@@ -111,6 +113,13 @@ export default function Home() {
             <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the Samsung AI Challenge — Visually-Rich Document Understanding track.</li>
             <li><time dateTime="2025-05">2025.05:</time> <span aria-hidden="true">🎉</span> <strong>SPTC</strong> was accepted to <strong>KCC 2025</strong>.</li>
           </ul>
+        </section>
+        <section id="work-in-progress" className="content-section" aria-labelledby="work-in-progress-title">
+          <h2 id="work-in-progress-title">Work in Progress</h2>
+          <article className="ongoing-research">
+            <h3>{graphRagTopic}</h3>
+            <p>Developed path-preserving beam search and evidence reranking for multi-hop question answering during my research internship at <a href="#experience">ETRI</a>.</p>
+          </article>
         </section>
         <section id="publications" className="content-section" aria-labelledby="publications-title">
           <h2 id="publications-title">Publications</h2>

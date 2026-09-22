@@ -56,6 +56,7 @@ h2 { display:block; margin:0 0 19px; padding:0 0 8px; border-bottom:1px solid #e
 .paper-thumbnail { display:flex; align-items:center; min-height:115px; }
 .paper-thumbnail img { width:100%; height:auto; max-height:170px; object-fit:contain; }
 h3 { margin:0 0 4px; font-size:1rem; font-weight:700; line-height:1.5; }
+.ongoing-research p { font-size:.9375rem; line-height:1.6; margin:6px 0 0; }
 .research-copy h3 { color:#313438; font-size:1rem; margin:0 0 6px; }
 .paper-links { display:inline; font-weight:400; }
 .paper-links a { white-space:nowrap; margin-right:7px; }
