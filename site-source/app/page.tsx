@@ -153,6 +153,8 @@ export default function Home() {
           <ul className="awards-list">
             <li><strong>2025.10:</strong> <span aria-hidden="true">🏆</span> <strong>3rd Place, Samsung AI Challenge</strong> — Visually-Rich Document Understanding track (210 teams).</li>
             <li><strong>2024:</strong> <strong>Mirae Asset Overseas Exchange Scholarship</strong>, Mirae Asset Park Hyeon Joo Foundation.</li>
+            <li><strong>2024:</strong> <span aria-hidden="true">🏆</span> <strong>Excellence Award, TAVE 13th Data Analysis Project</strong>.</li>
+            <li><strong>2024:</strong> <span aria-hidden="true">🏆</span> <strong>2nd Prize, DS Global Vision Makers Innovation Idea Competition</strong>.</li>
             <li><strong>2021–2022:</strong> <strong>Academic Excellence Scholarship</strong>, Duksung Women’s University (3 awards).</li>
           </ul>
         </section>
