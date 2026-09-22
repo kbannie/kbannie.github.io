@@ -102,13 +102,29 @@ export default function Home() {
         </section>
         <section id="news" className="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
-          <ul className="news-list">
-            <li><time dateTime="2026-09">2026.09:</time> <span aria-hidden="true">🎉</span> <strong>ConFuse</strong> was accepted to <strong>ICTC 2026</strong>.</li>
-            <li><time dateTime="2026-02">2026.02:</time> <span aria-hidden="true">🎉</span> <strong>UDAPose</strong> was accepted to <strong>CVPR 2026</strong>.</li>
-            <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🎉</span> <strong>CoDU</strong> was accepted to <strong>KDBC 2025</strong>.</li>
-            <li><time dateTime="2025-10">2025.10:</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the Samsung AI Challenge — Visually-Rich Document Understanding track.</li>
-            <li><time dateTime="2025-05">2025.05:</time> <span aria-hidden="true">🎉</span> <strong>SPTC</strong> was accepted to <strong>KCC 2025</strong>.</li>
-          </ul>
+          <div className="news-scroll" role="region" aria-labelledby="news-title" aria-describedby="news-scroll-hint" tabIndex={0}>
+            <ul className="news-list">
+              <li><time dateTime="2026-09">[Sep 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">ConFuse</a> was accepted to <strong>ICTC 2026</strong>.</li>
+              <li><time dateTime="2026-07">[Jul 2026]</time> I joined <a href="#experience">ETRI</a> as a research intern, working on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs</a>.</li>
+              <li><time dateTime="2026-03">[Mar 2026]</time> I joined <a href="#experience">BCG</a> as a Research Analyst Intern, working on industrial data and language models.</li>
+              <li><time dateTime="2026-02">[Feb 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2604.10485" target="_blank" rel="noreferrer">UDAPose</a> was accepted to <strong>CVPR 2026</strong>.</li>
+              <li><time dateTime="2026-01">[Jan 2026]</time> I joined <strong>Tobigs</strong> as an AI member of the 25th cohort.</li>
+              <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">CoDU</a> was accepted to <strong>KDBC 2025</strong>.</li>
+              <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the <a href="#awards">Samsung AI Challenge</a> — Visually-Rich Document Understanding track.</li>
+              <li><time dateTime="2025-05">[May 2025]</time> <span aria-hidden="true">🎉</span> Our paper <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736" target="_blank" rel="noreferrer">SPTC</a> was accepted to <strong>KCC 2025</strong>.</li>
+              <li><time dateTime="2025-03">[Mar 2025]</time> I joined <a href="#experience">DMKD Lab</a> at Duksung Women’s University as an undergraduate researcher, working on LLM reasoning and document understanding with <a href="https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788" target="_blank" rel="noreferrer">Prof. Jehyeok Rew</a>.</li>
+              <li><time dateTime="2025-03">[Mar 2025]</time> I began leading a four-member team for <strong>Duksung Global Challenger</strong>, a university-funded international project.</li>
+              <li><time dateTime="2024-12">[Dec 2024]</time> I completed my exchange semester at the <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>.</li>
+              <li><time dateTime="2024-08">[Aug 2024]</time> I started my exchange semester at the <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a> and joined the <strong>Computer Vision Lab</strong> to work on low-light human pose estimation with <a href="https://olemiss.edu/profiles/hbw" target="_blank" rel="noreferrer">Prof. Hawk Wang</a>.</li>
+              <li><time dateTime="2024">[2024]</time> I received the <a href="#awards">Mirae Asset Overseas Exchange Scholarship</a>.</li>
+              <li><time dateTime="2024">[2024]</time> <span aria-hidden="true">🏆</span> I received an <strong>Excellence Award</strong> in the <a href="#awards">TAVE 13th Data Analysis Project</a>.</li>
+              <li><time dateTime="2024">[2024]</time> <span aria-hidden="true">🏆</span> I received <strong>2nd Prize</strong> in the <a href="#awards">DS Global Vision Makers Innovation Idea Competition</a>.</li>
+              <li><time dateTime="2023-03">[Mar 2023]</time> I joined <a href="#service">CJ UNIT’s 8th cohort</a> as a volunteer coding instructor for middle-school students.</li>
+              <li><strong>[2021–2022]</strong> I received three <a href="#awards">Academic Excellence Scholarships</a> from Duksung Women’s University.</li>
+              <li><time dateTime="2021-03">[Mar 2021]</time> I began my undergraduate studies at <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>.</li>
+            </ul>
+          </div>
+          <p id="news-scroll-hint" className="news-scroll-hint">Scroll for earlier updates.</p>
         </section>
         <section id="work-in-progress" className="content-section" aria-labelledby="work-in-progress-title">
           <h2 id="work-in-progress-title">Work in Progress</h2>
