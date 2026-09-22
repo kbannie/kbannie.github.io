@@ -17,25 +17,21 @@ const research = [
   { id: 'udapose', name: 'UDAPose',
     title: 'UDAPose: Unsupervised Domain Adaptation for Low-Light Human Pose Estimation',
     authors: 'Haopeng Chen, Yihao Ai, Kabeen Kim, Robby T. Tan, Yixin Chen, Bo Wang', venue: 'CVPR 2026',
-    contribution: 'Domain-adaptation fine-tuning, baseline benchmarking, and failure-case analysis across 15 categories.',
     figure: { number: 1, src: '/figures/udapose-figure1.png', width: 2084, height: 630, alt: 'UDAPose Figure 1: comparison of enhancement-based, image translation-based, and proposed low-light pose estimation approaches' },
     paper: 'https://arxiv.org/abs/2604.10485', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
   { id: 'confuse', name: 'ConFuse',
     title: 'ConFuse: Context-Aware Fusion of LLMs and GBDTs for Sleep Prediction from Lifelog Data',
     authors: 'Kabeen Kim*, Yena Kim*, Minjeong Seo*', authorNote: '* Equal contribution.', venue: 'ICTC 2026',
-    contribution: 'Designed and implemented the LLM pipeline: GPT-4.1-guided feature selection and reliability scoring, lifelog prompts using personal baselines, QLoRA fine-tuning of Qwen2.5-7B-Instruct, and target-wise Platt calibration.',
     figure: { number: 1, src: '/figures/confuse-figure1.png', width: 4000, height: 1668, alt: 'ConFuse Figure 1: overview of context-aware LLM and GBDT prediction fusion' },
     paper: '', code: 'https://github.com/kbannie/ConFuse' },
   { id: 'codu', name: 'CoDU',
     title: 'CoDU: Multi-Stage Approach for Complex Document Structure Understanding',
     authors: 'Kabeen Kim, Minhye Lee, Haein Seo, Jehyeok Rew', venue: 'KDBC 2025',
-    contribution: 'DocLayout-YOLO fine-tuning, bounding-box refinement, and reading-order reconstruction.',
     figure: { number: 2, src: '/figures/codu-figure2.png', width: 1442, height: 603, alt: 'CoDU Figure 2: bounding box detection and refinement, OCR extraction, and reading order rearrangement pipeline' },
     paper: '', code: '' },
   { id: 'sptc', name: 'SPTC',
     title: 'SPTC (Single-Pass Tree Chain-of-Thought): An Efficient Prompting Scheme for Small Language Models',
     authors: 'Kabeen Kim, Jiye Park, Jehyeok Rew', venue: 'KCC 2025',
-    contribution: 'Single-pass prompting design integrating generation, self-evaluation, and selection.',
     figure: { number: 1, src: '/figures/sptc-figure1.png', width: 653, height: 358, alt: 'SPTC Figure 1: comparison of Tree-of-Thought on the left and SPTC on the right' },
     paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
 ];
@@ -128,7 +124,6 @@ export default function Home() {
             <div className="research-copy">
               <h3>{project.title} <span className="paper-links">{project.paper && <a href={project.paper} target="_blank" rel="noreferrer">[paper]</a>}{project.code && <a href={project.code} target="_blank" rel="noreferrer">[code]</a>}</span></h3>
               <AuthorLine value={project.authors} />{project.authorNote && <p className="paper-author-note">{project.authorNote}</p>}<p className="paper-venue"><em>{project.venue}</em></p>
-              {project.contribution && <p className="paper-contribution"><strong>My role:</strong> {project.contribution}</p>}
             </div>
           </article>)}</div>
         </section>

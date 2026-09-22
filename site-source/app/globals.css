@@ -65,8 +65,6 @@ h3 { margin:0 0 4px; font-size:1rem; font-weight:700; line-height:1.5; }
 .research-copy .paper-author-note { font-size:.75rem; line-height:1.5; margin:-2px 0 6px; }
 .paper-venue { font-size:.875rem; line-height:1.5; margin:0 0 3px !important; }
 .research-copy p,.experience-item p { font-size:.875rem; }
-.research-copy .paper-contribution { font-size:.8125rem; line-height:1.55; color:var(--muted-foreground); margin:7px 0 0; }
-.paper-contribution strong { font-weight:600; }
 .education-list li { margin:12px 0; }
 .awards-list { font-size:1rem; }
 .awards-list li { margin:9px 0; }
