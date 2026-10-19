@@ -94,6 +94,7 @@ export default function Home() {
       <main id="main-content">
         <section id="about" className="content-section about-section" aria-labelledby="about-title">
           <h2 id="about-title">About Me</h2>
+          <p>Hello:)</p>
           <p>I am an undergraduate in Computer Engineering and Statistics at <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>, expecting to graduate in February 2027.</p>
           <p className="research-intro">I study how LLM systems <strong>find evidence, connect it, and use it faithfully</strong>. My interests include retrieval-augmented generation, knowledge graphs, and evaluation that helps explain where these systems fail.</p>
           <p>Most recently, I worked on multi-hop GraphRAG at <a href="#experience">ETRI</a>. My earlier work spans LLM reasoning and document understanding at DMKD Lab, low-light pose estimation at the University of Mississippi, and domain LLM applications at BCG.</p>
