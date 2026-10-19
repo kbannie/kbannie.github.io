@@ -34,10 +34,10 @@ const research = [
     paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
 ];
 const experience = [
-  { mark: 'ETRI', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea', summary: 'Traced evidence loss in multi-hop retrieval and evaluated how well generated answers use source evidence.' },
-  { mark: 'BCG', tone: 'bcg', logo: '/logos/bcg.png', organization: 'Boston Consulting Group', role: 'Research Analyst Intern', date: 'Mar 2026 – May 2026', location: 'Seoul, South Korea', summary: 'Worked on domain LLM fine-tuning, RAG evaluation, and extracting information from slides.' },
-  { mark: 'DMKD', tone: 'dmkd', logo: '/logos/duksung-mark.png', organization: 'DMKD Lab · Duksung Women’s University', role: 'Undergraduate Researcher', advisor: { name: 'Prof. Jehyeok Rew', href: 'https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788' }, date: 'Mar 2025 – Feb 2026', location: 'Seoul, South Korea', summary: 'Led studies on efficient prompting and document understanding, alongside a product-search RAG collaboration.' },
-  { mark: 'CV', tone: 'cvlab', logo: '/logos/olemiss.png', organization: 'Vision and Multimodal Intelligence Lab · University of Mississippi', role: 'Undergraduate Researcher', advisor: { name: 'Prof. Bo Wang', href: 'https://olemiss.edu/profiles/hbw' }, date: 'Sep 2024 – Aug 2025', location: 'Mississippi, United States', summary: 'Studied failure cases and domain adaptation for low-light pose estimation; continued remotely after my exchange semester.' },
+  { mark: 'ETRI', href: 'https://www.etri.re.kr/eng/main/main.etri', tone: 'etri', logo: '/logos/etri.png', organization: 'Electronics and Telecommunications Research Institute', role: 'Research Intern', date: 'Jul 2026 – Aug 2026', location: 'Daejeon, South Korea', summary: 'Traced evidence loss in multi-hop retrieval and evaluated how well generated answers use source evidence.' },
+  { mark: 'BCG', href: 'https://www.bcg.com/korea', tone: 'bcg', logo: '/logos/bcg.png', organization: 'Boston Consulting Group', role: 'Research Analyst Intern', date: 'Mar 2026 – May 2026', location: 'Seoul, South Korea', summary: 'Worked on domain LLM fine-tuning, RAG evaluation, and extracting information from slides.' },
+  { mark: 'DMKD', href: 'https://lab.researchwho.com/DSWU-DMKD/', tone: 'dmkd', logo: '/logos/duksung-mark.png', organization: 'DMKD Lab · Duksung Women’s University', role: 'Undergraduate Researcher', advisor: { name: 'Prof. Jehyeok Rew', href: 'https://www.duksung.ac.kr/univ/majorInfo.do?miIdx=73&menuId=5788' }, date: 'Mar 2025 – Feb 2026', location: 'Seoul, South Korea', summary: 'Led studies on efficient prompting and document understanding, alongside a product-search RAG collaboration.' },
+  { mark: 'CV', href: 'https://olemiss.edu/departments/engineering/computer-information-science/research/', tone: 'cvlab', logo: '/logos/olemiss.png', organization: 'Vision and Multimodal Intelligence Lab · University of Mississippi', role: 'Undergraduate Researcher', advisor: { name: 'Prof. Bo Wang', href: 'https://olemiss.edu/profiles/hbw' }, date: 'Sep 2024 – Aug 2025', location: 'Mississippi, United States', summary: 'Studied failure cases and domain adaptation for low-light pose estimation; continued remotely after my exchange semester.' },
 ];
 
 function AuthorLine({ value }: { value: string }) {
@@ -97,7 +97,7 @@ export default function Home() {
           <p>Hello:)</p>
           <p>I am an undergraduate in Computer Engineering and Statistics at <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>, expecting to graduate in February 2027.</p>
           <p className="research-intro">I study how LLM systems <strong>find evidence, connect it, and use it faithfully</strong>. My interests include retrieval-augmented generation, knowledge graphs, and evaluation that helps explain where these systems fail.</p>
-          <p>Most recently, I worked on multi-hop GraphRAG at <a href="#experience">ETRI</a>. My earlier work spans LLM reasoning and document understanding at DMKD Lab, low-light pose estimation at the University of Mississippi, and domain LLM applications at BCG.</p>
+          <p>Most recently, I worked on multi-hop GraphRAG at <a href="https://www.etri.re.kr/eng/main/main.etri" target="_blank" rel="noreferrer">ETRI</a>. My earlier work spans LLM reasoning and document understanding at <a href="https://lab.researchwho.com/DSWU-DMKD/" target="_blank" rel="noreferrer">DMKD Lab</a>, low-light pose estimation at the <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>, and domain LLM applications at <a href="https://www.bcg.com/korea" target="_blank" rel="noreferrer">BCG</a>.</p>
           <p className="about-links"><a href="#publications">Explore my publications ↓</a><span aria-hidden="true"> · </span><a href="/KabeenKim_CV.pdf?v=bf3f451a9e47" target="_blank" rel="noreferrer">Full CV ↗</a></p>
         </section>
         <section id="news" className="content-section" aria-labelledby="news-title">
@@ -105,8 +105,8 @@ export default function Home() {
           <div className="news-scroll" role="region" aria-labelledby="news-title" aria-describedby="news-scroll-hint" tabIndex={0}>
             <ul className="news-list">
               <li><time dateTime="2026-09">[Sep 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">ConFuse</a> was accepted to <strong>ICTC 2026</strong>.</li>
-              <li><time dateTime="2026-07">[Jul 2026]</time> I joined <a href="#experience">ETRI</a> as a research intern, working on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs</a>.</li>
-              <li><time dateTime="2026-03">[Mar 2026]</time> I joined <a href="#experience">BCG</a> as a Research Analyst Intern, working on domain LLM fine-tuning, RAG evaluation, and slide parsing.</li>
+              <li><time dateTime="2026-07">[Jul 2026]</time> I joined <a href="https://www.etri.re.kr/eng/main/main.etri" target="_blank" rel="noreferrer">ETRI</a> as a research intern, working on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs</a>.</li>
+              <li><time dateTime="2026-03">[Mar 2026]</time> I joined <a href="https://www.bcg.com/korea" target="_blank" rel="noreferrer">BCG</a> as a Research Analyst Intern, working on domain LLM fine-tuning, RAG evaluation, and slide parsing.</li>
               <li><time dateTime="2026-02">[Feb 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2604.10485" target="_blank" rel="noreferrer">UDAPose</a> was accepted to <strong>CVPR 2026</strong>.</li>
               <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">CoDU</a> was accepted to <strong>KDBC 2025</strong>.</li>
               <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the <a href="#awards">Samsung AI Challenge</a> — Visually-Rich Document Understanding track.</li>
@@ -143,7 +143,7 @@ export default function Home() {
           <h2 id="experience-title">Research &amp; Work Experience</h2>
           <div className="experience-list">{experience.map(item => <article className="experience-item" key={item.mark}>
             <div className={'organization-logo ' + item.tone}><img src={item.logo} alt={item.mark === 'DMKD' ? 'Duksung Women’s University emblem' : item.mark === 'CV' ? 'University of Mississippi' : item.mark} width="130" height="80" loading="lazy" /></div>
-            <div><h3>{item.organization}</h3><p className="job-title">{item.role} <span className="job-location">| {item.location}</span></p>{item.advisor && <p className="job-title">Advisor: <a href={item.advisor.href} target="_blank" rel="noreferrer">{item.advisor.name}</a></p>}<p className="experience-date">{item.date}</p><p>{item.summary}</p>
+            <div><h3><a href={item.href} target="_blank" rel="noreferrer">{item.organization}</a></h3><p className="job-title">{item.role} <span className="job-location">| {item.location}</span></p>{item.advisor && <p className="job-title">Advisor: <a href={item.advisor.href} target="_blank" rel="noreferrer">{item.advisor.name}</a></p>}<p className="experience-date">{item.date}</p><p>{item.summary}</p>
             </div>
           </article>)}</div>
         </section>
