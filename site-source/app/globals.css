@@ -138,3 +138,10 @@ h3 { margin:0 0 4px; font-size:1rem; font-weight:700; line-height:1.5; }
 }
 @media print { .news-scroll { max-height:none; overflow:visible; padding-right:0; } .news-scroll-hint { display:none; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+/* Keep the homepage focused on research and easy to scan. */
+.about-links { font-size:.9375rem; margin-top:18px !important; }
+.research-intro { font-size:1.2rem; line-height:1.65; }
+.research-copy .paper-takeaway { font-size:.9375rem; line-height:1.55; margin:0 0 10px; color:#565f65; }
+.cv-note { margin-top:20px !important; font-size:.875rem; color:#646a6e; }
+@media(max-width:700px) { .research-intro { font-size:1.0625rem; } }
