@@ -25,7 +25,7 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .site-header { position:sticky; top:0; z-index:20; background:#fff; border-bottom:1px solid #f2f3f3; }
 .header-inner { max-width:1280px; min-height:78px; padding:0 32px; margin:0 auto; display:flex; align-items:center; gap:35px; }
 .site-title { font-size:1.125rem; font-weight:700; color:#6f777d; white-space:nowrap; }
-.main-nav { display:flex; align-items:center; gap:28px; }
+.main-nav { display:flex; align-items:center; gap:22px; }
 .main-nav a { font-size:1rem; color:#6f777d; white-space:nowrap; padding:24px 0; }
 .main-nav a[aria-current] { color:#34383c; }
 .main-nav a:hover { color:#34383c; text-decoration:none; }
@@ -86,6 +86,8 @@ h3 { margin:0 0 4px; font-size:1rem; font-weight:700; line-height:1.5; }
 .job-location { font-size:.875rem; color:#63696e; }
 .experience-item .experience-date { font-size:.875rem; margin:1px 0 4px; }
 .service-list { font-size:1rem; }
+.service-list li + li { margin-top:18px; }
+.ongoing-research + .ongoing-research { margin-top:24px; }
 .site-footer { border-top:1px solid #eee; margin-top:48px; padding:22px 0 30px; display:flex; justify-content:space-between; gap:20px; font-size:.75rem; color:#687078; }
 .site-footer a { color:#687078; }
 @media(min-width:1440px) { .page-layout { padding-top:42px; } }

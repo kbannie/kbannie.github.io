@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 const title = 'Kabeen Kim | Academic Homepage';
-const description = 'Kabeen Kim studies Computer Engineering and Information Statistics at Duksung Women’s University, with research experience in document understanding, LLM reasoning, GraphRAG, and computer vision.';
+const description = 'Kabeen Kim studies Computer Engineering and Statistics at Duksung Women’s University, with research interests in faithful RAG, multi-hop GraphRAG, knowledge graphs, and evaluation and error analysis of LLM systems.';
 const siteUrl = 'https://kbannie.github.io';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl), title, description,
