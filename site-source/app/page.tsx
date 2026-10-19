@@ -12,22 +12,22 @@ const sections = [
 ];
 const graphRagTopic = 'Where does evidence get lost in multi-hop retrieval?';
 const research = [
-  { id: 'udapose', name: 'UDAPose',
+  { id: 'udapose', contribution: 'Analyzed low-light failure cases and ran domain adaptation experiments.', name: 'UDAPose',
     title: 'UDAPose: Unsupervised Domain Adaptation for Low-Light Human Pose Estimation',
     authors: 'Haopeng Chen, Yihao Ai, Kabeen Kim, Robby T. Tan, Yixin Chen, Bo Wang', venue: 'CVPR 2026', takeaway: 'Adapting pose estimation to low-light scenes where people blend into the background.',
     figure: { number: 1, src: '/figures/udapose-figure1.png', width: 2084, height: 630, alt: 'UDAPose Figure 1: comparison of enhancement-based, image translation-based, and proposed low-light pose estimation approaches' },
     paper: 'https://arxiv.org/abs/2604.10485', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
-  { id: 'confuse', name: 'ConFuse',
+  { id: 'confuse', contribution: 'Initiated and led the team, fine-tuned Qwen2.5-7B, and developed sample-wise fusion.', name: 'ConFuse',
     title: 'ConFuse: Context-Aware Fusion of LLMs and GBDTs for Sleep Prediction from Lifelog Data',
     authors: 'Kabeen Kim*†, Yena Kim*, Minjeong Seo*', authorNote: '* Equal contribution. † Presenter.', venue: 'ICTC 2026 · Poster', takeaway: 'Combining GBDTs and a fine-tuned LLM for sleep prediction, with fusion weights guided by input quality.',
     figure: { number: 1, src: '/figures/confuse-figure1.png', width: 4000, height: 1668, alt: 'ConFuse Figure 1: overview of context-aware LLM and GBDT prediction fusion' },
     paper: '', code: 'https://github.com/kbannie/ConFuse' },
-  { id: 'codu', name: 'CoDU',
+  { id: 'codu', contribution: 'Recruited and led the team, designed the document pipeline, and fine-tuned layout detection.', name: 'CoDU',
     title: 'CoDU: Multi-Stage Approach for Complex Document Structure Understanding',
     authors: 'Kabeen Kim†, Minhye Lee, Haein Seo, Jehyeok Rew', authorNote: '† Presenter.', venue: 'KDBC 2025 · Oral', takeaway: 'Turning complex documents into structured content through layout detection, OCR, and reading-order analysis.',
     figure: { number: 2, src: '/figures/codu-figure2.png', width: 1442, height: 603, alt: 'CoDU Figure 2: bounding box detection and refinement, OCR extraction, and reading order rearrangement pipeline' },
     paper: '', code: 'https://github.com/kbannie/CoDU' },
-  { id: 'sptc', name: 'SPTC',
+  { id: 'sptc', contribution: 'Proposed and led the first-author study and analyzed self-evaluation errors.', name: 'SPTC',
     title: 'SPTC(Single Pass Tree Chain-of-thought): An Efficient Prompting Scheme for Small Language Models',
     authors: 'Kabeen Kim†, Jiye Park, Jehyeok Rew', authorNote: '† Presenter.', venue: 'KCC 2025 · Poster', takeaway: 'Bringing generation, self-evaluation, and selection together in one prompt for small language models.',
     figure: { number: 1, src: '/figures/sptc-figure1.png', width: 653, height: 358, alt: 'SPTC Figure 1: comparison of Tree-of-Thought on the left and SPTC on the right' },
@@ -102,17 +102,17 @@ export default function Home() {
         </section>
         <section id="news" className="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
-          <div className="news-scroll" role="region" aria-labelledby="news-title" aria-describedby="news-scroll-hint" tabIndex={0}>
-            <ul className="news-list">
-              <li><time dateTime="2026-09">[Sep 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">ConFuse</a> was accepted to <strong>ICTC 2026</strong>.</li>
-              <li><time dateTime="2026-07">[Jul 2026]</time> I joined <a href="https://www.etri.re.kr/eng/main/main.etri" target="_blank" rel="noreferrer">ETRI</a> as a research intern, working on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs</a>.</li>
-              <li><time dateTime="2026-03">[Mar 2026]</time> I joined <a href="https://www.bcg.com/korea" target="_blank" rel="noreferrer">BCG</a> as a Research Analyst Intern, working on domain LLM fine-tuning, RAG evaluation, and slide parsing.</li>
-              <li><time dateTime="2026-02">[Feb 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2604.10485" target="_blank" rel="noreferrer">UDAPose</a> was accepted to <strong>CVPR 2026</strong>.</li>
-              <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">CoDU</a> was accepted to <strong>KDBC 2025</strong>.</li>
-              <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the <a href="#awards">Samsung AI Challenge</a> — Visually-Rich Document Understanding track.</li>
-            </ul>
-          </div>
-          <p id="news-scroll-hint" className="news-scroll-hint">Scroll for earlier updates.</p>
+          <ul className="news-list">
+            <li><time dateTime="2026-10">[Oct 2026]</time> I presented <a href="#publications">ConFuse</a> as a poster at <strong>ICTC 2026</strong> in Jeju, South Korea.</li>
+            <li><time dateTime="2026-09">[Sep 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">ConFuse</a> was accepted to <strong>ICTC 2026</strong>.</li>
+            <li><time dateTime="2026-07">[Jul 2026]</time> I joined <a href="https://www.etri.re.kr/eng/main/main.etri" target="_blank" rel="noreferrer">ETRI</a> as a research intern, working on <a href="#work-in-progress">multi-hop GraphRAG over knowledge graphs</a>.</li>
+            <li><time dateTime="2026-03">[Mar 2026]</time> I joined <a href="https://www.bcg.com/korea" target="_blank" rel="noreferrer">BCG</a> as a Research Analyst Intern, working on domain LLM fine-tuning, RAG evaluation, and slide parsing.</li>
+            <li><time dateTime="2026-02">[Feb 2026]</time> <span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2604.10485" target="_blank" rel="noreferrer">UDAPose</a> was accepted to <strong>CVPR 2026</strong>.</li>
+          </ul>
+          <details className="news-archive"><summary>Earlier updates</summary><ul className="news-list">
+            <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🎉</span> Our paper <a href="#publications">CoDU</a> was accepted to <strong>KDBC 2025</strong>.</li>
+            <li><time dateTime="2025-10">[Oct 2025]</time> <span aria-hidden="true">🏆</span> Our team placed <strong>3rd out of 210 teams</strong> in the <a href="#awards">Samsung AI Challenge</a> — Visually-Rich Document Understanding track.</li>
+          </ul></details>
         </section>
         <section id="work-in-progress" className="content-section" aria-labelledby="work-in-progress-title">
           <h2 id="work-in-progress-title">Research Focus</h2>
@@ -128,7 +128,7 @@ export default function Home() {
             <a className="paper-thumbnail" href={project.figure.src} target="_blank" rel="noreferrer" aria-label={'View ' + project.name + ' Figure ' + project.figure.number + ' at full size (opens in a new tab)'} title={'View Figure ' + project.figure.number + ' at full size'}><img src={project.figure.src} width={project.figure.width} height={project.figure.height} loading="lazy" alt={project.figure.alt} /></a>
             <div className="research-copy">
               <h3>{project.title} <span className="paper-links">{project.paper && <a href={project.paper} target="_blank" rel="noreferrer">[paper]</a>}{project.code && <a href={project.code} target="_blank" rel="noreferrer">[code]</a>}</span></h3>
-              <p className="paper-takeaway">{project.takeaway}</p><AuthorLine value={project.authors} />{project.authorNote && <p className="paper-author-note">{project.authorNote}</p>}<p className="paper-venue"><em>{project.venue}</em></p>
+              <p className="paper-takeaway">{project.takeaway}</p><p className="paper-contribution"><strong>My contribution:</strong> {project.contribution}</p><AuthorLine value={project.authors} />{project.authorNote && <p className="paper-author-note">{project.authorNote}</p>}<p className="paper-venue"><em>{project.venue}</em></p>
             </div>
           </article>)}</div>
         </section>
