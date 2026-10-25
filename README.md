@@ -32,3 +32,7 @@ Key files:
 - `site-source/public/`: CV, profile, institution logos, and paper figures.
 
 This is a static site without a database or server-side API. The client-side mobile menu works after React loads. All content sections are displayed without expandable detail panels. No secret credentials or separate hosting service are required.
+
+## ECE portfolio
+
+The ECE-focused portfolio is at https://kbannie.github.io/ece/. Edit its standalone HTML, CSS, and CV in `site-source/public/ece/`; the generated copies live in `ece/`. The main homepage remains separate.
