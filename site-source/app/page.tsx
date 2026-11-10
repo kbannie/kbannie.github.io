@@ -87,7 +87,7 @@ export default function Home() {
             <a className="social-link social-link-linkedin" href="https://www.linkedin.com/in/kabeen-kim-6806b8221/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><SocialIcon name="linkedin" /><span>LinkedIn</span></a>
             <a className="social-link social-link-github" href="https://github.com/kbannie" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><SocialIcon name="github" /><span>GitHub</span></a>
             <a className="social-link" href="https://scholar.google.com/citations?user=_GZ1nzIAAAAJ&hl=ko" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><SocialIcon name="scholar" /><span>Google Scholar</span></a>
-            <a className="social-link" href="/KabeenKim_CV.pdf?v=fdf06dccaabe" target="_blank" rel="noreferrer" aria-label="Curriculum Vitae (PDF)" title="CV"><SocialIcon name="cv" /><span>CV</span></a>
+            <a className="social-link" href="/KabeenKim_CV.pdf?v=6fa5ed40889d" target="_blank" rel="noreferrer" aria-label="Curriculum Vitae (PDF)" title="CV"><SocialIcon name="cv" /><span>CV</span></a>
           </div>
         </div>
       </aside>
@@ -98,7 +98,7 @@ export default function Home() {
           <p>I am an undergraduate in Computer Engineering and Statistics at <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>, expecting to graduate in February 2027.</p>
           <p className="research-intro">I study how LLM systems <strong>find evidence, connect it, and use it faithfully</strong>. My interests include retrieval-augmented generation, knowledge graphs, and evaluation that helps explain where these systems fail.</p>
           <p>Most recently, I worked on multi-hop GraphRAG at <a href="https://www.etri.re.kr/eng/main/main.etri" target="_blank" rel="noreferrer">ETRI</a>. My earlier work spans LLM reasoning and document understanding at <a href="https://lab.researchwho.com/DSWU-DMKD/" target="_blank" rel="noreferrer">DMKD Lab</a>, low-light pose estimation at the <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>, and domain LLM applications at <a href="https://www.bcg.com/korea" target="_blank" rel="noreferrer">BCG</a>.</p>
-          <p className="about-links"><a href="#publications">Explore my publications ↓</a><span aria-hidden="true"> · </span><a href="/KabeenKim_CV.pdf?v=fdf06dccaabe" target="_blank" rel="noreferrer">Full CV ↗</a></p>
+          <p className="about-links"><a href="#publications">Explore my publications ↓</a><span aria-hidden="true"> · </span><a href="/KabeenKim_CV.pdf?v=6fa5ed40889d" target="_blank" rel="noreferrer">Full CV ↗</a></p>
         </section>
         <section id="news" className="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
@@ -162,7 +162,7 @@ export default function Home() {
             <li><strong>Teaching.</strong> I developed n8n and RAG workshop materials for public-sector staff and taught LEGO robotics and Python to middle-school students in Jeju through CJ UNIT.</li>
             <li><strong>Leading collaborative projects.</strong> Through Duksung Global Challenger, I led “Be a Connector,” a campus–local business app project informed by expert interviews in four European countries.</li>
           </ul>
-          <p className="cv-note">For the full list of projects, activities, and awards, see my <a href="/KabeenKim_CV.pdf?v=fdf06dccaabe" target="_blank" rel="noreferrer">CV</a>.</p>
+          <p className="cv-note">For the full list of projects, activities, and awards, see my <a href="/KabeenKim_CV.pdf?v=6fa5ed40889d" target="_blank" rel="noreferrer">CV</a>.</p>
         </section>
         <footer className="site-footer"><span>© 2026 Kabeen Kim.</span><a href="#about">Back to top ↑</a></footer>
       </main>
