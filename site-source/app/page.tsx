@@ -135,7 +135,7 @@ export default function Home() {
         <section id="education" className="content-section" aria-labelledby="education-title">
           <h2 id="education-title">Education</h2>
           <ul className="education-list">
-            <li><strong>2021.03 – 2027.02 (expected)</strong>, B.S. in Computer Engineering and Statistics, <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>. <span className="entry-meta">GPA: 4.15 / 4.5 (3.85 / 4.0 U.S. equivalent).</span></li>
+            <li><strong>2021.03 – 2027.02 (expected)</strong>, B.E. in Computer Engineering and B.S. in Statistics, <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>. <span className="entry-meta">GPA: 4.15 / 4.5 (3.85 / 4.0 U.S. equivalent).</span></li>
             <li><strong>2024.08 – 2024.12</strong>, Exchange Student in Computer Science, <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>.</li>
           </ul>
         </section>
