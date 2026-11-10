@@ -14,21 +14,21 @@ const graphRagTopic = 'Where does evidence get lost in multi-hop retrieval?';
 const research = [
   { id: 'udapose', contribution: 'Analyzed low-light failure cases and ran domain adaptation experiments.', name: 'UDAPose',
     title: 'UDAPose: Unsupervised Domain Adaptation for Low-Light Human Pose Estimation',
-    authors: 'Haopeng Chen, Yihao Ai, Kabeen Kim, Robby T. Tan, Yixin Chen, Bo Wang', venue: 'CVPR 2026', takeaway: 'Adapting pose estimation to low-light scenes where people blend into the background.',
+    authors: 'Haopeng Chen, Yihao Ai, Kabeen Kim, Robby T. Tan, Yixin Chen, Bo Wang', venue: 'CVPR 2026 · Poster', takeaway: 'Adapting pose estimation to low-light scenes where people blend into the background.',
     figure: { number: 1, src: '/figures/udapose-figure1.png', width: 2084, height: 630, alt: 'UDAPose Figure 1: comparison of enhancement-based, image translation-based, and proposed low-light pose estimation approaches' },
-    paper: 'https://arxiv.org/abs/2604.10485', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
+    paper: 'https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_UDAPose_Unsupervised_Domain_Adaptation_for_Low-Light_Human_Pose_Estimation_CVPR_2026_paper.pdf', code: 'https://github.com/Vision-and-Multimodal-Intelligence-Lab/UDAPose' },
   { id: 'confuse', contribution: 'Initiated and led the team, fine-tuned Qwen2.5-7B, and developed sample-wise fusion.', name: 'ConFuse',
     title: 'ConFuse: Context-Aware Fusion of LLMs and GBDTs for Sleep Prediction from Lifelog Data',
     authors: 'Kabeen Kim*†, Yena Kim*, Minjeong Seo*', authorNote: '* Equal contribution. † Presenter.', venue: 'ICTC 2026 · Poster', takeaway: 'Combining GBDTs and a fine-tuned LLM for sleep prediction, with fusion weights guided by input quality.',
     figure: { number: 1, src: '/figures/confuse-figure1.png', width: 4000, height: 1668, alt: 'ConFuse Figure 1: overview of context-aware LLM and GBDT prediction fusion' },
-    paper: '', code: 'https://github.com/kbannie/ConFuse' },
+    paper: '/papers/ConFuse.pdf', code: 'https://github.com/kbannie/ConFuse' },
   { id: 'codu', contribution: 'Recruited and led the team, designed the document pipeline, and fine-tuned layout detection.', name: 'CoDU',
     title: 'CoDU: Multi-Stage Approach for Complex Document Structure Understanding',
-    authors: 'Kabeen Kim†, Minhye Lee, Haein Seo, Jehyeok Rew', authorNote: '† Presenter.', venue: 'KDBC 2025 · Oral', takeaway: 'Turning complex documents into structured content through layout detection, OCR, and reading-order analysis.',
+    authors: 'Kabeen Kim†, Minhye Lee, Haein Seo, Jehyeok Rew', authorNote: '† Presenter.', venue: 'KDBC 2025 · Oral · In Korean', takeaway: 'Turning complex documents into structured content through layout detection, OCR, and reading-order analysis.',
     figure: { number: 2, src: '/figures/codu-figure2.png', width: 1442, height: 603, alt: 'CoDU Figure 2: bounding box detection and refinement, OCR extraction, and reading order rearrangement pipeline' },
-    paper: '', code: 'https://github.com/kbannie/CoDU' },
+    paper: '/papers/CoDU.pdf', code: 'https://github.com/kbannie/CoDU' },
   { id: 'sptc', contribution: 'Proposed and led the first-author study and analyzed self-evaluation errors.', name: 'SPTC',
-    title: 'SPTC(Single Pass Tree Chain-of-thought): An Efficient Prompting Scheme for Small Language Models',
+    title: 'SPTC (Single Pass Tree Chain-of-Thought): An Efficient Prompting Scheme for Small Language Models',
     authors: 'Kabeen Kim†, Jiye Park, Jehyeok Rew', authorNote: '† Presenter.', venue: 'KCC 2025 · Poster', takeaway: 'Bringing generation, self-evaluation, and selection together in one prompt for small language models.',
     figure: { number: 1, src: '/figures/sptc-figure1.png', width: 653, height: 358, alt: 'SPTC Figure 1: comparison of Tree-of-Thought on the left and SPTC on the right' },
     paper: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318736', code: '' },
@@ -135,7 +135,7 @@ export default function Home() {
         <section id="education" className="content-section" aria-labelledby="education-title">
           <h2 id="education-title">Education</h2>
           <ul className="education-list">
-            <li><strong>2021.03 – 2027.02 (expected)</strong>, B.S. in Computer Engineering and Statistics, <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>. <span className="entry-meta">GPA: 4.15 / 4.5.</span></li>
+            <li><strong>2021.03 – 2027.02 (expected)</strong>, B.S. in Computer Engineering and Statistics, <a href="https://www.duksung.ac.kr/" target="_blank" rel="noreferrer">Duksung Women’s University</a>. <span className="entry-meta">GPA: 4.15 / 4.5 (3.85 / 4.0 U.S. equivalent).</span></li>
             <li><strong>2024.08 – 2024.12</strong>, Exchange Student in Computer Science, <a href="https://olemiss.edu/" target="_blank" rel="noreferrer">University of Mississippi</a>.</li>
           </ul>
         </section>
